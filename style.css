@@ -1,7 +1,7 @@
 :root {
   --color-purple: #a6b1e1;
   --color-purple-lt: #f4eeff;
-  --color-sand: #eddfb3;
+  --color-yellow: #ffcb42;
 }
 
 html {
@@ -22,6 +22,8 @@ html {
 
 header {
   grid-column: 2/3;
+  box-shadow: 0 4px 5px -1px rgb(222, 217, 217);
+  z-index: 1;
 }
 
 .header-top {
@@ -143,6 +145,61 @@ ul {
 
 article {
   background-color: var(--color-purple-lt);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 40px;
+  gap: 16px;
+  padding: 16px;
+}
+
+.card-section-titles,
+.card .title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.projects {
+  grid-column: 1/2;
+}
+
+.announcements {
+  grid-column: 2/3;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: auto 50px;
+  border-left: 12px solid var(--color-yellow);
+  box-shadow: 4px 4px 5px -1px rgb(222, 217, 217);
+}
+
+.card-top {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  gap: 6px;
+}
+
+.card-bottom {
+  justify-self: end;
+  display: flex;
+  gap: 32px;
+  margin-right: 50px;
+}
+
+.article-left {
+  grid-column: 1/2;
+  grid-row: 2/6;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+}
+
+.announcement-card {
+  background-color: #fff;
 }
 
 img[src*="svg"] {
@@ -154,7 +211,7 @@ img[src*="png"] {
 }
 
 img[src*="turtle"] {
-  background-color: var(--color-sand);
+  background-color: var(--color-yellow);
   border-radius: 50%;
   border: 1px solid black;
 }
