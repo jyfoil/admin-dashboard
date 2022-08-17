@@ -257,6 +257,7 @@ hr {
   box-shadow: 4px 4px 5px -1px rgb(222, 217, 217);
   border-radius: 10px;
   gap: 8px;
+  grid-row: 4/6;
 }
 
 .trending-left,
