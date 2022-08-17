@@ -10,7 +10,7 @@ This is my admin dashboard project used to practice CSS grid layout, created usi
 
 ### Responsiveness
 
-![Admin Dashboard Card Responsivenss](./gifs/card-responsiveness.gif)
+![Admin Dashboard Card Responsiveness](./gifs/card-responsiveness-demo.gif)
 
 ## Reflection
 
