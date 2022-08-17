@@ -117,6 +117,10 @@ ul {
   box-sizing: content-box;
 }
 
+.side-images > img:first-child {
+  width: 48px;
+}
+
 .side-images {
   justify-items: center;
 }
@@ -227,16 +231,60 @@ hr {
   margin: 20px 20px 5px 20px;
 }
 
-img[src*="svg"] {
-  width: 2rem;
+.trending-card {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  padding: 25px 0 30px 15px;
+  margin-right: 20px;
+  box-shadow: 4px 4px 5px -1px rgb(222, 217, 217);
+  border-radius: 10px;
+  gap: 8px;
 }
 
-img[src*="png"] {
-  width: 3rem;
+.trending-left,
+.trending-right {
+  display: grid;
+  gap: 24px;
+}
+
+.trending-left {
+  justify-items: center;
+}
+
+.trending-left > img {
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 55px;
+}
+
+.trending-right > div {
+  margin-top: 10px;
+}
+
+.koala p:first-child {
+  font-size: 1.1rem;
+}
+
+img[src*="koala.png"] {
+  background-color: #59ce8f;
+}
+
+img[src*="whale.png"] {
+  background-color: #21e1e1;
+}
+
+img[src*="chick.png"] {
+  background-color: #fa2fb5;
+}
+
+img[src*="svg"] {
+  width: 32px;
 }
 
 img[src*="turtle"] {
   background-color: var(--color-yellow);
   border-radius: 50%;
+  width: 55px;
   border: 1px solid black;
 }
