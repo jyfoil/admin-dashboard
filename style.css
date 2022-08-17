@@ -92,6 +92,11 @@ button {
   width: 120px;
   height: 45px;
   font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(-1px);
 }
 
 .header-bottom > img[src*="png"] {
@@ -292,6 +297,11 @@ img[src*="chick.png"] {
 
 img[src*="svg"] {
   width: 32px;
+  cursor: pointer;
+}
+
+img[src*="svg"]:active {
+  transform: translateY(-1px);
 }
 
 img[src*="turtle"] {
